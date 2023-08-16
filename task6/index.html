@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            width: 70%;
+            height: 50%;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .container h1 {
+            border: 2px solid black;
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .circle h3 {
+            border: .5px solid black;
+            border-radius: 10%;
+            padding: 4px;
+            margin: 0;
+        }
+        .circle p {
+            margin: 10px 0;
+        }
+        .circle a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border:2px solid #007bff;
+            border-radius: 5px;
+        }
+        .circle a:hover{
+            background-color: white;
+            color:#007bff
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flex Model</h1>
+        <div class="content">
+            <div class="circle">
+                <h3>WhatsApp</h3>
+                <p>WhatsApp is a popular messaging application that allows users 
+                to send text messages, voice messages, make voice and video calls, 
+                and share multimedia content.</p>
+                <a href="https://en.wikipedia.org/wiki/WhatsApp" target="_blank">Know more</a>
+            </div>
+            <div class="circle">
+                <h3>Wikipedia</h3>
+                <p>Wikipedia is a free, web-based encyclopedia that allows users 
+                to collaboratively create, edit, and curate articles on a wide range of topics.</p>
+                <a href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank">Know more</a>
+            </div>
+            <div class="circle">
+                <h3>ChatGPT</h3>
+                <p>ChatGPT is a variant of the GPT language model developed by OpenAI.
+                GPT models are designed to understand and generate human-like text.</p>
+                <a href="https://en.wikipedia.org/wiki/ChatGPT" target="_blank">Know more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
